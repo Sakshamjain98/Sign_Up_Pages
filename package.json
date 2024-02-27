@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build:css": "tailwindcss build styles.css -o output.css",
+    "deploy": "npm run build:css"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
